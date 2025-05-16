@@ -102,8 +102,11 @@ header .container .menu:hover + ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
+  top: 100%;
+  background-color: #0000007c;
+  gap: 0;
 }
+
 header .container > nav {
   display: flex;
   align-items: center;
@@ -112,12 +115,15 @@ header .container > nav {
 }
 
 header .container nav .i {
-  border-left: 1px var(--secondry-color) solid;
+  border-left: 2px #00c8ff solid;
   margin-left: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 header .container nav i {
   color: #fff;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 header .container nav ul {
@@ -178,6 +184,10 @@ header .container nav ul li a:hover::before {
   }
   header .container .menu {
     display: block;
+  }
+  header .container nav > ul li a {
+    font-size: 14px;
+    padding: 20px;
   }
 }
 /* Landing Style  */
@@ -310,7 +320,7 @@ section .head h2::after {
 }
 section .head p {
   color: #686868;
-  max-width: 580px;
+  max-width: 100%;
   margin: auto;
   line-height: 1.6;
 }
@@ -883,8 +893,10 @@ section .head p {
   margin-bottom: 40px;
   background: #fff;
   color: transparent;
-  color: blue;
+  color: rgb(0, 0, 0);
   cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .pricing .container .plans .plan button::before {
@@ -991,6 +1003,7 @@ section .head p {
   text-indent: 10px;
   background-color: transparent;
   flex: 1;
+  color: #fff;
 }
 
 .subsecribe .container form input[type="email"]:focus {
@@ -1149,9 +1162,6 @@ footer .container .social-links a {
 
 footer .container p {
   color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 footer .container p span {
   color: #00c8ff;
@@ -1160,12 +1170,11 @@ footer .container p span {
 
 footer .container p:last-child {
   font-family: "Geo", sans-serif;
-  font-size: 20px;
 }
 
 footer .container p:last-child a {
   color: #00c8ff;
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   font-style: italic;
 }
